@@ -1,6 +1,9 @@
 {% extends 'basic/base.html' %}
 
 {% block content %}
+
+        <a href="{{ url_for("index") }}" class="index_page_button" >Главная</a>
+
 <div class="contact_form">
     <h4>Свяжитесь с нами</h4>
 <!-- Just here i use "url_for" to call the function get_contact.

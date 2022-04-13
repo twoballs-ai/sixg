@@ -341,3 +341,10 @@ p.age  {
     background-color: #0e0a0a;
     border-color: #0e0a0a;
 }
+
+.index_page_button{
+    margin-top: 85px;
+    margin-bottom: -100px;
+    margin-left: 85%;
+    padding: 1rem 1.25rem;
+}
