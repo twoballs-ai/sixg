@@ -10,7 +10,7 @@ mail = Mail()
 
 app = Flask(__name__)
 app.debug = True
-app.config['SECRET_KEY'] = 'cdvfd((^3439acd9*&^$%&*&^%G&^%FGYH'
+app.config['SECRET_KEY'] = 'test'
 csrf.init_app(app)
 
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
