@@ -1,57 +1,205 @@
-<!doctype html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    {% block title %}
-    {% if title %}
-    <title>{{ title }}-sixg.ru</title>
-    {% else %}
-    <title>6G-Создание сайтов</title>
-    {% endif %}
-    {% endblock %}
-<link type="text/css" href="{{ url_for('static', filename='6gv2/css/style.css') }}" rel="stylesheet">
+<!DOCTYPE HTML>
 
-  </head>
+<html>
+	<head>
+		<title>sixg.ru</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='6gv2/css/main.css') }}" />
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='6gv2/css/noscript.css') }}" /></noscript>
+	</head>
+	<body class="is-preload">
 
-  <div class="rectangle1">
-    <div class="rectangle2">
-      <div class="rectangle3">
-          <div class="rectangle4">
-              <div class="rectangle5">
-                  <div class="rectangle6">
-                      <div class="rectangle7">
-                          <div class="rectangle8">
-                              <div class="rectangle9">
-                                  <div class="rectangle10">
-                                      <div class="rectangle11">
-                                          <div class="rectangle12">
-                                              <div class="rectangle13">
-                                                  <div class="rectangle14">
-                                                      <div class="content">
-                                                        {% block content %}
-                                                            <p class="text_logo">web_студия</p>
-                                                            <p class="text_logo2">6G</p>
-                                                            <p class="age">2022</p>
-                                                            <div class="container">
-                                                                <a href="{{ url_for("about") }}" class="page_button" >Подробнее</a>
-                                                            </div>
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Добро пожаловать</a></li>
+							<li><a href="#one">Кто мы</a></li>
+							<li><a href="#two">Что мы можем</a></li>
+							<li><a href="#three">Свяжитесь с нами</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
 
-                                                        {% endblock %}
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-    </div>
-  </div>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>web_студия 6g</h1>
+							<p>Мы занимаемся разработкой и дизайном приложений и сервисов различной сложности <br/>
+							Проходим с клиентом все стадии от эскиза проекта до финишных штрихов.</p>
+							<ul class="actions">
+								<li><a href="#one" class="button scrolly">Подробнее</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<a href="#" class="image"><img src="{{ url_for('static', filename='6gv2/images/pic01.jpg') }}" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Мы команада разработчиков</h2>
+									<p>Мы состоим из фрилансеров и сотрудников на удаленке, у нас есть дизайнеры, верстальщики, frontend и backend разработчики ну и конечно тестировщики.</p>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Подробнее</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="{{ url_for('static', filename='6gv2/images/pic02.jpg') }}" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Мы состоявшийся коллектив</h2>
+									<p>Вот уже несколько лет мы работали совместно над различными проектами и наконец объединили силы что бы работать совместно.</p>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Подробнее</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="{{ url_for('static', filename='6gv2/images/pic03.jpg') }}" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Мы стараемся быть профессионалами</h2>
+									<p>Естественно все мы хотим быть профессионалами и для того мы постоянно самосовершенствуеемся..</p>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Подробнее</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Что мы можем</h2>
+							<p>Мы старались продумать и систематизировать а также автоматизировать нашу работу и взаимодействие.<br>
+                            Перед каждым проектом мы всегда проводим планирование и разделяем проект на несколько этапов</p>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-code"></span>
+									<h3>Качественный код</h3>
+									<p>Наши специалисты всегда старются писать качественный код и передают его на проверку более оптным специалистам для ревизии и обратной связи</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-lock"></span>
+									<h3>Тестирование и безопасность</h3>
+									<p>Наши тестировщики постоянно обкатывают функционал и указывают нам на все наши ошибки.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-cog"></span>
+									<h3>Разработка функционала</h3>
+									<p>Самое сложное это проработка желаний клиента, мы внимательно отнесемся ко всем хотелкам, и составим качественное ТЗ.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-desktop"></span>
+								    <h3>Адаптивность</h3>
+									<p>Мы всегда стараемся писать адаптивные сервисы под минимум 10 видов экрана, но даже если этого мало то для телефонов и планшетов мы дополнительно можем написать ваше приложение</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-link"></span>
+									<h3>Поддержка</h3>
+									<p>Мы соблюдаем наши гарантийные обязателсьтва и всегда готовы прийти к вам на помощь</p>
+								</section>
+								<section>
+									<span class="icon major fa-gem"></span>
+									<h3>Дополнительно</h3>
+									<p>Если вам нужен специалист по чат ботам, или специалист по контекстной рекламе, то у нас есть друзья фрилансеры которых мы можем вам порекомендовать</p>
+								</section>
+							</div>
+							<ul class="actions">
+								<li><a href="generic.html" class="button">Написать нам</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Мы всегда на связи</h2>
+							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<div class="split style1">
+								<section>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Адрес</h3>
+											<span>428000 Чебоксары<br/>
+											Чувашская республика, тн 89176767659<br/>
+											Россия</span>
+										</li>
+										<li>
+											<h3>Почта</h3>
+											<a href="#">manager@sixg.ru</a>
+										</li>
+										<li>
+											<h3>Телефон</h3>
+											<span>89176767659</span>
+										</li>
+										<li>
+											<h3>Мы в соц сетях</h3>
+											<ul class="icons">
+												<li><a href="#" class="icon brands fa-gitlab"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="#" class="icon brands fa-telegram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands fa-vk"><span class="label">Vk</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; 2022. Все права защищены.</li><li>: <a href="https://sixg.ru">sixg.ru</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="{{ url_for('static', filename='6gv2/js/jquery.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='6gv2/js/jquery.scrollex.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='6gv2/js/jquery.scrolly.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='6gv2/js/browser.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='6gv2/js/breakpoints.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='6gv2/js/util.js') }}"></script>
+			<script src="{{ url_for('static', filename='6gv2/js/main.js') }}"></script>
+
+	</body>
 </html>
