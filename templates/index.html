@@ -1,7 +1,13 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>sixg.ru</title>
+    {% block title %}
+    {% if title %}
+    <title>{{ title }}-sixg.ru</title>
+    {% else %}
+    <title>6G-Создание сайтов</title>
+    {% endif %}
+    {% endblock %}
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="{{ url_for('static', filename='6gv2/css/main.css') }}" />
